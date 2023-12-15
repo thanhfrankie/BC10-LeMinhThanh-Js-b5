@@ -190,28 +190,31 @@ function tinhTienDien() {
   var soKw = document.getElementById("so-kw").value * 1;
   var ketQua = document.getElementById("thong-tin-hoa-don");
   var tienPhaiTra;
-  if (soKw <= 50) {
-      tienPhaiTra = soKw * 500;
-      return ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
-    }
-  if (50 < soKw <= 100) {
-    tienPhaiTra = 50*500 + (soKw-50) * 650;
-     return ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
-  }
-  if (100 < soKw <= 200) {
-    tienPhaiTra = 50*500 + 50*650 + (soKw -100) * 850;
-   return ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
-  }
-  if (200 < soKw <= 350) {
-    tienPhaiTra = 50*500 + 50*650 + 100*850 + (soKw-200) * 1100;
-     return ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
+//   if (soKw <= 50) {
+//       tienPhaiTra = soKw * 500;
+//     ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
+//   }
+//   if (50 < soKw <= 100) {
+//     tienPhaiTra = soKw * 650;
+//       ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
+//   }
+//   if (100 < soKw <= 200) {
+//     tienPhaiTra = soKw * 850;
+//     ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
+//   }
+//   if (200 < soKw <= 350) {
+//     tienPhaiTra = soKw * 1100;
+//       ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
       
-  }
-  if (soKw > 350) {
-    tienPhaiTra = 50*500 + 50*650 + 100*850 + 150*1100+ (soKw-350) * 1300;
-     return ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
-}
+//   }
+//   if (soKw > 350) {
+//     tienPhaiTra = soKw * 1300;
+//       ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
+    //   }
     
+    if (soKw >300) {
+        tienPhaiTra = soKw * 1300;
+      ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}
 
 }
 

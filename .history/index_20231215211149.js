@@ -192,33 +192,34 @@ function tinhTienDien() {
   var tienPhaiTra;
   if (soKw <= 50) {
       tienPhaiTra = soKw * 500;
-      return ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
-    }
+      console.log(soKw)
+    ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
+  }
   if (50 < soKw <= 100) {
-    tienPhaiTra = 50*500 + (soKw-50) * 650;
-     return ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
+    tienPhaiTra = soKw * 650;
+      ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
   }
   if (100 < soKw <= 200) {
-    tienPhaiTra = 50*500 + 50*650 + (soKw -100) * 850;
-   return ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
+    tienPhaiTra = soKw * 850;
+    ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
   }
   if (200 < soKw <= 350) {
-    tienPhaiTra = 50*500 + 50*650 + 100*850 + (soKw-200) * 1100;
-     return ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
+    tienPhaiTra = soKw * 1100;
+      console.log("🥶 - tinhTienDien - tienPhaiTra:", tienPhaiTra)
+      ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
       
   }
   if (soKw > 350) {
-    tienPhaiTra = 50*500 + 50*650 + 100*850 + 150*1100+ (soKw-350) * 1300;
-     return ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
-}
-    
-
+    tienPhaiTra = soKw * 1300;
+      ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
+      
+  }
 }
 
 // Bài tập 3
 /**
  * B1: tạo biến, lấy giá trị từ input
- * B2: Tính thuế thu nhập cá nhân
+ * B2: Tính lương
  * + tạo biến để tính lương: lương 1 ngày * số ngày làm
  * + gán sự kiện click cho button
  * B3: hiển thị kết quả

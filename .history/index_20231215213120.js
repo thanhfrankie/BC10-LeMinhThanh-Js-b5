@@ -209,7 +209,7 @@ function tinhTienDien() {
   }
   if (soKw > 350) {
     tienPhaiTra = 50*500 + 50*650 + 100*850 + 150*1100+ (soKw-350) * 1300;
-     return ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
+      ketQua.innerText = `Họ tên: ${hoTen}, Tiền điện: ${tienPhaiTra}`;
 }
     
 
