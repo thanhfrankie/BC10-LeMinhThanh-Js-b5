@@ -242,10 +242,10 @@ function tinhTienThue() {
         soNguoiPhuThuoc * 1.6e5) /
       12;
   }
-  tienThuNhapCaNhan =  new Intl.NumberFormat('vn-VN', { style: 'currency', currency: 'VND' }).format(
-    tienThuNhapCaNhan,
+  tienThuNhapCaNhan =  new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(
+    number,
   )
-    return (thuNhapChiuThue.innerHTML = `Họ tên: ${hoTen}, Tiền thuế thu nhập cá nhân: ${tienThuNhapCaNhan}`);
+    return (thuNhapChiuThue.innerHTML = `Họ tên: ${hoTen}, Tiền thuế thu nhập cá nhân: ${tienThuNhapCaNhan} VND `);
 }
 
 // Bài tập 4

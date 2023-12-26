@@ -202,6 +202,7 @@ function tinhTienThue() {
         4e5 -
         soNguoiPhuThuoc * 1.6e5) /
       12;
+    return (thuNhapChiuThue.innerHTML = `Họ tên: ${hoTen}, Tiền thuế thu nhập cá nhân: ${tienThuNhapCaNhan} VND `);
   }
   if (thuNhapNam > 384e6 && thuNhapNam <= 624e6) {
     tienThuNhapCaNhan =
@@ -214,6 +215,7 @@ function tinhTienThue() {
         4e5 -
         soNguoiPhuThuoc * 1.6e5) /
       12;
+    return (thuNhapChiuThue.innerHTML = `Họ tên: ${hoTen}, Tiền thuế thu nhập cá nhân: ${tienThuNhapCaNhan} VND `);
   }
   if (thuNhapNam > 624e6 && thuNhapNam <= 960e6) {
     tienThuNhapCaNhan =
@@ -227,6 +229,7 @@ function tinhTienThue() {
         4e5 -
         soNguoiPhuThuoc * 1.6e5) /
       12;
+    return (thuNhapChiuThue.innerHTML = `Họ tên: ${hoTen}, Tiền thuế thu nhập cá nhân: ${tienThuNhapCaNhan} VND `);
   }
   if (thuNhapNam > 960e6) {
     tienThuNhapCaNhan =
@@ -241,11 +244,8 @@ function tinhTienThue() {
         4e5 -
         soNguoiPhuThuoc * 1.6e5) /
       12;
+    return (thuNhapChiuThue.innerHTML = `Họ tên: ${hoTen}, Tiền thuế thu nhập cá nhân: ${tienThuNhapCaNhan} VND `);
   }
-  tienThuNhapCaNhan =  new Intl.NumberFormat('vn-VN', { style: 'currency', currency: 'VND' }).format(
-    tienThuNhapCaNhan,
-  )
-    return (thuNhapChiuThue.innerHTML = `Họ tên: ${hoTen}, Tiền thuế thu nhập cá nhân: ${tienThuNhapCaNhan}`);
 }
 
 // Bài tập 4
